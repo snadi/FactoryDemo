@@ -5,8 +5,9 @@
 
 package cs.nyuad.se.buttons;
 
-public class WindowsButton {
-    public void paintWindowsButton(){
+public class WindowsButton implements Button{
+    public void paint(){
         System.out.println("Painting a MacOS Button");
+
     }
 }
