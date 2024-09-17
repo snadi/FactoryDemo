@@ -3,8 +3,8 @@
  * Solution code based on same link.
  */
 package cs.nyuad.se.factorydemo;
-import java.util.Date;
 
+import cs.nyuad.se.buttons.Button;
 import cs.nyuad.se.buttons.MacOSButton;
 import cs.nyuad.se.checkboxes.MacOSCheckBox;
 import cs.nyuad.se.buttons.WindowsButton;
@@ -17,13 +17,13 @@ public class Main {
         String os = System.console().readLine();
 
         if (os.equals("Mac")){
-            MacOSButton button = new MacOSButton();
-            button.paintMacOSButton();
+            Button button = new MacOSButton();
+            button.paint();
             MacOSCheckBox checkBox = new MacOSCheckBox();
             checkBox.renderMacOSCheckBox();
         }else if (os.equals("Windows")){
-            WindowsButton button = new WindowsButton();
-            button.paintWindowsButton();
+            Button button = new WindowsButton();
+            button.paint();
             WindowsCheckBox checkBox = new WindowsCheckBox();
             checkBox.renderWindowsCheckBox();
         }else{
