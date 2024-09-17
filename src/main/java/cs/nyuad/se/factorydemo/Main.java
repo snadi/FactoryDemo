@@ -4,22 +4,32 @@
  */
 package cs.nyuad.se.factorydemo;
 
+import cs.nyuad.se.factories.GUIFactory;
+import cs.nyuad.se.factories.MacOSFactory;
+import cs.nyuad.se.factories.WindowsFactory;
+import cs.nyuad.se.app.*;
+
 
 public class Main {
-    public static void main(String[] args) {
+
+    private static Application configureApp(){
         System.out.println("Which OS do you want to support? Mac or Windows");
         String os = System.console().readLine();
-        GUI gui = null;
+        GUIFactory gui = null;
 
         if (os.equals("Mac")){
-            gui = new MacOSGUI();
+            gui = new MacOSFactory();
         }else if (os.equals("Windows")){
-            gui = new WindowsGUI();
+            gui = new WindowsFactory();
         }else{
             System.out.println("Invalid OS");
         }
-           
-    gui.renderGUI();
 
+        Application app = new Application(gui);
+        return app;
+    }
+    public static void main(String[] args) {
+        Application app = configureApp();
+        app.paint();
     }
 }
