@@ -4,33 +4,22 @@
  */
 package cs.nyuad.se.factorydemo;
 
-import cs.nyuad.se.buttons.Button;
-import cs.nyuad.se.buttons.MacOSButton;
-import cs.nyuad.se.checkboxes.MacOSCheckBox;
-import cs.nyuad.se.buttons.WindowsButton;
-import cs.nyuad.se.checkboxes.WindowsCheckBox;
-import cs.nyuad.se.checkboxes.CheckBox;
-
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Which OS do you want to support? Mac or Windows");
         String os = System.console().readLine();
+        GUI gui = null;
 
         if (os.equals("Mac")){
-            Button button = new MacOSButton();
-            button.paint();
-            CheckBox checkBox = new MacOSCheckBox();
-            checkBox.render();
+            gui = new MacOSGUI();
         }else if (os.equals("Windows")){
-            Button button = new WindowsButton();
-            button.paint();
-            WindowsCheckBox checkBox = new WindowsCheckBox();
-            checkBox.render();
+            gui = new WindowsGUI();
         }else{
             System.out.println("Invalid OS");
         }
            
+    gui.renderGUI();
 
     }
 }
