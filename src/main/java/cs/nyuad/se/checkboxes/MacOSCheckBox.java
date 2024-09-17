@@ -5,8 +5,8 @@
 
 package cs.nyuad.se.checkboxes;
 
-public class MacOSCheckBox{
-    public void renderMacOSCheckBox(){
+public class MacOSCheckBox implements CheckBox{
+    public void paint(){
         System.out.println("Rendering a MacOS CheckBox");
     }
     
