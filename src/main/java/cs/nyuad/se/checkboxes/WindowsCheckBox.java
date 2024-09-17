@@ -6,8 +6,8 @@
 package cs.nyuad.se.checkboxes;
 
 public class WindowsCheckBox {
-    public void paintWindowsCheckBox(){
-        System.out.println("Drawing a Windows CheckBox");
+    public void renderWindowsCheckBox(){
+        System.out.println("Rendering a Windows CheckBox");
     }
     
 }

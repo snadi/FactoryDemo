@@ -7,6 +7,6 @@ package cs.nyuad.se.buttons;
 
 public class WindowsButton {
     public void paintWindowsButton(){
-        System.out.println("Rendering a MacOS Button");
+        System.out.println("Painting a MacOS Button");
     }
 }

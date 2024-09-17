@@ -8,6 +8,6 @@ package cs.nyuad.se.buttons;
 
 public class MacOSButton {
     public void paintMacOSButton(){
-        System.out.println("Rendering a MacOS Button");
+        System.out.println("Painting a MacOS Button");
     }
 }

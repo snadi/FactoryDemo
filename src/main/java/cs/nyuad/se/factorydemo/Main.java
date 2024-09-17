@@ -20,12 +20,12 @@ public class Main {
             MacOSButton button = new MacOSButton();
             button.paintMacOSButton();
             MacOSCheckBox checkBox = new MacOSCheckBox();
-            checkBox.paintMacOSCheckBox();
+            checkBox.renderMacOSCheckBox();
         }else if (os.equals("Windows")){
             WindowsButton button = new WindowsButton();
             button.paintWindowsButton();
             WindowsCheckBox checkBox = new WindowsCheckBox();
-            checkBox.paintWindowsCheckBox();
+            checkBox.renderWindowsCheckBox();
         }else{
             System.out.println("Invalid OS");
         }
