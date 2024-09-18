@@ -18,9 +18,9 @@ public class Main {
         GUIFactory gui = null;
 
         if (os.equals("Mac")){
-            gui = new MacOSFactory();
+            gui = MacOSFactory.getInstance();
         }else if (os.equals("Windows")){
-            gui = new WindowsFactory();
+            gui = WindowsFactory.getInstance();
         }else{
             System.out.println("Invalid OS");
         }
