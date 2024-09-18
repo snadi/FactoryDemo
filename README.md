@@ -9,7 +9,7 @@ The example is based on [https://refactoring.guru/design-patterns/creational-pat
 - The [abstract-factory-soln](https://github.com/snadi/FactoryDemo/tree/snadi/abstract-factory-soln) has an example of changing this code to use the abstract factory pattern
 - The [apply-singleton-to-abstract-factory](https://github.com/snadi/FactoryDemo/tree/snadi/apply-singleton-to-abstract-factory) branch shows how to use Singleton within the abstract factory pattern
 
-Before looking at the other branches, we advise you to first look at the base code and try to think of how you would refactor this code to be more extensible. For example, what if we now have a third OS (Linux) that we need to support? What if the GUI gets complicated with more GUI elements that we need to adapt for each OS?
+Before looking at the other branches, we advise you to first look at the base code and try to think of how you can redesign this code to be more extensible. For example, what if we now have a third OS (Linux) that we need to support? What if the GUI gets complicated with more GUI elements that we need to adapt for each OS?
 
 You can switch between the branches by using `git checkout <name of the branch>`
 
